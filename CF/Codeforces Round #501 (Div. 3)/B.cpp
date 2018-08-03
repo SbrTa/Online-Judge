@@ -19,8 +19,9 @@ int main()
     }
     vector<int>x;
     for(i=0;i<n;i++){
-        for(j=0;j<n;j++) if(s[j]==t[i]) break;
-        for(;j>i;j--){
+        int jj;
+        for(j=0;j<n;j++) if(s[j]==t[i]) jj=j;
+        for(j=jj;j>i;j--){
             swap(s[j],s[j-1]);
             x.push_back(j);
         }
