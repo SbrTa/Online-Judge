@@ -2,6 +2,7 @@
 #define inf 100000000
 using namespace std;
 
+
 int main()
 {
     int n,m,i,j;
